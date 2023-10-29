@@ -1,0 +1,21 @@
+---
+interface Props {
+	imgUrl: string;
+	name: string;
+}
+const { imgUrl, name } = Astro.props;
+---
+
+<figure class="relative w-full">
+	<img
+		src={imgUrl}
+		alt="Anillo"
+		class="w-full h-[400px] rounded-lg object-cover"
+	/>
+	<figcaption
+		class="absolute bottom-0 text-white flex flex-col items-center pb-4 w-[90%]"
+	>
+		<p class="font-bold text-3xl xs:text-xl">{name}</p>
+		<p class="font-light pb-6">Ver productos</p>
+	</figcaption>
+</figure>

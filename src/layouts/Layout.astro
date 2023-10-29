@@ -1,0 +1,51 @@
+---
+import { ViewTransitions, fade } from "astro:transitions";
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body transition:animate={fade({ duration: "0.2s" })}>
+		<slot />
+		<style is:global>
+			code {
+				font-family:
+					Menlo,
+					Monaco,
+					Lucida Console,
+					Liberation Mono,
+					DejaVu Sans Mono,
+					Bitstream Vera Sans Mono,
+					Courier New,
+					monospace;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			h1 {
+				font-size: calc(1.425rem + 2.1vw);
+			}
+
+			h3 {
+				font-size: calc(1.3125rem + 0.75vw);
+			}
+		</style>
+	</body>
+</html>
