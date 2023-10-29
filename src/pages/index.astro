@@ -1,7 +1,11 @@
 ---
 import Card from "../components/card.astro";
+import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
 import CheckMark from "../components/icons/check-mark.astro";
+import Facebook from "../components/icons/facebook.astro";
+import Instagram from "../components/icons/instagram.astro";
+import Whatsapp from "../components/icons/whatsapp.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -42,7 +46,9 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 		</section>
 
-		<div class="px-8 w-full self-center max-w-[1200px] flex flex-col gap-16">
+		<div
+			class="px-8 w-full self-center max-w-[1200px] flex flex-col gap-16 pb-8"
+		>
 			<section class="grid place-items-center">
 				<h3 class="font-bold text-center mt-8 mb-4">Nuestros productos</h3>
 
@@ -122,9 +128,39 @@ import Layout from "../layouts/Layout.astro";
 
 			<section>
 				<h3 class="font-bold text-center text-black mb-4">Contactanos</h3>
+
+				<p class="text-center mb-8">
+					¿Estás listo para elevar tu estilo con joyería de oro laminado? No
+					esperes más. Contáctanos ahora para descubrir nuestras piezas únicas y
+					asequibles. Nuestro equipo está listo para ayudarte a seleccionar la
+					joyería perfecta que se adapte a tu estilo y presupuesto. ¡Estamos
+					emocionados de ayudarte a brillar con nuestras joyas de oro laminado!
+				</p>
+
+				<div class="flex justify-center gap-20">
+					<a
+						href="https://instagram.com/orolaminado_joyeria?igshid=OGQ5ZDc2ODk2ZA==
+					"
+						target="_blank"
+					>
+						<Instagram />
+					</a>
+
+					<a
+						href="https://www.facebook.com/profile.php?id=100077112152514&mibextid=LQQJ4d"
+						target="_blank"
+					>
+						<Facebook />
+					</a>
+
+					<a href="https://wa.link/y398oh" target="_blank">
+						<Whatsapp />
+					</a>
+				</div>
 			</section>
 		</div>
 	</main>
+	<Footer />
 </Layout>
 
 <style></style>
