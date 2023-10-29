@@ -1,0 +1,64 @@
+---
+import CheckMark from "../icons/check-mark.astro";
+---
+
+<section>
+	<h3 class="font-bold text-center text-black mb-4">Nuestros materiales</h3>
+
+	<figure class="w-full grid grid-cols-1 sm:grid-cols-2 gap-3 relative">
+		<figcaption class="flex flex-col gap-3 text-lg">
+			<p>
+				Descubre la elegancia y sofisticación del oro laminado. Este material,
+				utilizado en joyería de alta calidad, combina la belleza del oro con la
+				durabilidad de metales de base. A través de un meticuloso proceso de
+				soldadura y presión, se aplican varias capas de oro a un metal de menor
+				valor, creando una pieza que brilla con el lustre del oro puro.
+			</p>
+
+			<ul
+				class="[&>li]:flex [&>li]:items-center [&>li]:gap-4 [&>svg]:w-[20px] flex flex-col gap-4 pb-3"
+			>
+				<li>
+					<CheckMark />
+					<span
+						>Lujo asequible: El oro laminado te ofrece el brillo del oro a un
+						precio mucho más accesible.</span
+					>
+				</li>
+				<li>
+					<CheckMark />
+					<span
+						>Durabilidad: Este material es resistente y mantiene su brillo y
+						color dorado original durante años.</span
+					>
+				</li>
+				<li>
+					<CheckMark />
+					<span
+						>Diversidad de estilos: Con el oro laminado, tienes una amplia gama
+						de diseños y estilos para elegir y personalizar.</span
+					>
+				</li>
+			</ul>
+		</figcaption>
+		<div class="flex flex-col w-full gap-2">
+			<img
+				src="images/image-60.jpg"
+				alt=""
+				class="h-[320px] lg:h-[360px] w-full object-cover rounded-xl"
+			/>
+			<div class="hidden sm:flex w-full gap-2">
+				<img
+					src="images/image-66.jpg"
+					alt=""
+					class="w-full h-[200px] object-cover rounded-lg"
+				/>
+				<img
+					src="images/image-86.jpg"
+					alt=""
+					class="w-full h-[200px] object-cover rounded-lg"
+				/>
+			</div>
+		</div>
+	</figure>
+</section>
