@@ -1,5 +1,7 @@
 ---
 import { ViewTransitions, fade } from "astro:transitions";
+import Footer from "../components/footer.astro";
+import Header from "../components/header.astro";
 interface Props {
 	title: string;
 }
@@ -19,9 +21,11 @@ const { title } = Astro.props;
 		<ViewTransitions />
 	</head>
 	<body transition:animate={fade({ duration: "0.2s" })}>
+		<Header />
 		<main class="flex flex-col w-full">
 			<slot />
 		</main>
+		<Footer />
 		<style is:global>
 			code {
 				font-family:
