@@ -1,0 +1,37 @@
+---
+interface Props {
+	imgUrl: string;
+}
+
+const { imgUrl } = Astro.props;
+---
+
+<article>
+	<figure>
+		<img
+			src={imgUrl}
+			alt="product"
+			decoding="async"
+			loading="lazy"
+			class="object-cover"
+		/>
+	</figure>
+</article>
+
+<style>
+	article {
+		padding: 0 1rem;
+	}
+
+	figure {
+		height: 200px;
+	}
+
+	figure > img {
+		border-radius: 0.5em;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		aspect-ratio: 1/1;
+	}
+</style>
